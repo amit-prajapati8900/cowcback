@@ -1,0 +1,93 @@
+.sensor-dashboard-main {
+  background: radial-gradient(circle at 0% 0%, #090d16 0%, #0f172a 100%);
+  min-height: 100vh;
+  color: #ffffff;
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+}
+
+/* Glassmorphic Top Nav Bar Panel */
+.top-nav-glass {
+  background: rgba(15, 23, 42, 0.8) !important;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+/* Cyber Matrix Input Fields */
+.cyber-input {
+  background-color: rgba(15, 23, 42, 0.6) !important;
+  border: 1px solid rgba(255, 255, 255, 0.15) !important;
+  color: #ffffff !important;
+  border-radius: 0px !important; /* Sharp Advance Look */
+  transition: all 0.3s ease;
+}
+
+.cyber-input:focus {
+  border-color: #00b0ff !important;
+  box-shadow: 0 0 10px rgba(0, 176, 255, 0.25) !important;
+  background-color: rgba(15, 23, 42, 0.9) !important;
+}
+
+.cyber-input::placeholder {
+  color: rgba(255, 255, 255, 0.35) !important;
+}
+
+/* Sharp Telemetry Performance Card Items */
+.sensor-item-card {
+  background: #1e293b !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+  border-radius: 0px !important; /* 100% Sharp Geometric Line */
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+.sensor-item-card:hover {
+  transform: translateY(-8px);
+  border-color: #00b0ff !important;
+  box-shadow: 0 20px 40px rgba(0, 176, 255, 0.15) !important;
+}
+
+/* Metric Sub-pod boxes layout inside maps */
+.metric-box {
+  background: rgba(15, 23, 42, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  height: 100%;
+}
+
+/* Linear Pulse Animation for Active System Nodes */
+.icon-pulse {
+  display: inline-flex;
+  animation: pulse-glow 2s infinite alternate;
+}
+
+@keyframes pulse-glow {
+  0% { transform: scale(1); filter: drop-shadow(0 0 2px #00b0ff); }
+  100% { transform: scale(1.1); filter: drop-shadow(0 0 8px #00b0ff); }
+}
+
+/* Full Width Custom Progress Bar Core overrides */
+.custom-progress {
+  height: 8px !important;
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  border-radius: 0px !important;
+}
+
+.btn-gradient {
+  background: linear-gradient(90deg, #0072ff 0%, #00d4ff 100%) !important;
+  border: none !important;
+  border-radius: 0px !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.5px;
+  transition: all 0.3s !important;
+}
+
+.btn-gradient:hover {
+  box-shadow: 0 8px 24px rgba(0, 176, 255, 0.4) !important;
+  transform: translateY(-1px);
+}
